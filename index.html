@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Restore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="container">
+    <h1>Pixel Restore</h1>
+    <p>Upload an image and enhance it with sliders.</p>
+
+    <input type="file" id="upload" accept="image/*">
+
+    <div class="slider-box">
+      <label>
+        Pixel Amount:
+        <span id="pixelValue">18</span>
+      </label>
+      <input type="range" id="pixelSlider" min="2" max="40" value="18">
+    </div>
+
+    <div class="slider-box">
+      <label>
+        Quality Boost:
+        <span id="qualityValue">80</span>
+      </label>
+      <input type="range" id="qualitySlider" min="0" max="100" value="80">
+    </div>
+
+    <button id="downloadBtn">Download Image</button>
+
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
